@@ -37,7 +37,7 @@
 3. Sample of your `Dockerfile` should be like:
 
   ```
-  FROM ysihaoy/scala-play:2.12.2-2.6.0-sbt-0.13.15
+  FROM Jacke/scala-play:2.12.2-2.6.0-sbt-0.13.15
 
   # caching dependencies
   COPY ["build.sbt", "/tmp/build/"]
