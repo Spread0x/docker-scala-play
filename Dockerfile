@@ -5,7 +5,8 @@ ENV SBT_VERSION 1.2.8
 ENV CHECKSUM f4b9fde91482705a772384c9ba6cdbb84d1c4f7a278fd2bfb34961cd9ed8e1d7
 
 # Install sbt
-RUN apk add --update bash curl openssl ca-certificates && \
+RUN apt-get update
+RUN apt-get -y install bash unzip curl openssl ca-certificates && \
   curl -L -o /tmp/sbt.zip \
     https://piccolo.link/sbt-${SBT_VERSION}.zip && \
   openssl dgst -sha256 /tmp/sbt.zip \
